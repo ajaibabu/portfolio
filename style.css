@@ -1,0 +1,590 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 16px;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+a:active, a:visited {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.about-bg {
+    background-color: #3c3c3c;
+    background-image: url('../images/amir-suhail.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 5%;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.about-bg h1, .about-bg h3 {
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.about-bg p {
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+}
+
+.about-bg .show-desktop-navigator {
+    font-weight: 600;
+}
+
+.about-bg h1 {
+    font-size: 70px;
+}
+
+.about-bg h3 {
+    font-size: 47px;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.about-me .t-caret {
+    display: none;
+}
+
+.alternate-bg {
+    background-color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #eee;
+}
+
+.footer {
+  height: 50px;
+}
+
+.fixed-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.active {
+  background-color: #F6F7F2;
+  color: #000;
+}
+
+.active a {
+  color: #000;
+}
+
+.active-about a {
+  border-bottom: solid 3px #fff;
+}
+
+#likes i {
+  background-image: url('../images/green-heart.png');
+  height: 19px;
+  width: 22px;
+  display: inline-block;
+  background-size: cover;
+}
+
+#dislikes i {
+  background-image: url('../images/red-heart.png');
+  height: 17px;
+  width: 20px;
+  display: inline-block;
+  background-size: cover;
+}
+
+#headerText {
+  padding-top: 10px;
+}
+
+.vertical--seperator {
+  border-right: solid #ededed 2px;
+}
+
+.good-at-image {
+  width: 100%
+}
+
+.bg-offset-white {
+  background-color: #eee;
+}
+
+.bg-flat-blue {
+  background-color: #3D8EB9;
+  color: #FEFEFE;
+}
+
+.bg-flat-dark-blue {
+  background-color: #00587A;
+  color: #FEFEFE;
+}
+
+.bg-flat-grey {
+    background-color: #3c3c3c;
+    color: #FEFEFE;
+}
+
+.reach-me {
+  margin-top: 20px;
+  height: 100px;
+}
+
+.gmail {
+  height: 20px;
+}
+
+h1, h3, h4, h5 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.my-img {
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 100%;
+    border: solid 10px;
+    background-image: url('../images/amir.JPG');
+    background-size: 134%;
+    background-position: -32px;
+    background-repeat: no-repeat;
+}
+
+.about-me {
+  height: calc(100vh - 62px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me h1{
+    font-weight: 700;
+}
+
+.about-me h3 {
+    font-weight: 600;
+}
+
+.show-mobile-navigator {
+  height: 8vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+  transition: height 1s;
+}
+
+.full-height-header {
+  height: 105vh !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.navigator--padding {
+  padding: 20px 0;
+}
+
+.block-padding {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.block-padding h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.block-padding h3 {
+    margin-top: 1rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.summary {
+    text-align: center;
+    font-size: 1.35rem;
+    color: #93a4aa;
+}
+
+.good-at--title {
+    border-top: solid 1px #999;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.good-at--title__text {
+    font-size: 1.2rem;
+    position: absolute;
+    top: -15px;
+    padding: 5px;
+    border: solid 1px #999;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+
+.height--175 {
+  height: 175px;
+}
+
+/*padding and margin classes*/
+.no--margin {
+  margin: 0;
+}
+
+.margin--top--10 {
+  margin-top: 10px;
+}
+
+.margin--top--30 {
+    margin-top: 30px;
+}
+
+.margin--bottom--20 {
+    margin-bottom: 20px;
+}
+.margin--bottom--60 {
+  margin-bottom: 8vh;
+}
+
+.margin--top--50 {
+  margin-top: 50px;
+}
+.padding-top--10 {
+  padding-top: 10px;
+}
+
+.padding-top--20 {
+  padding-top: 20px;
+}
+
+/*color classes*/
+.color--red {
+  color: red;
+}
+
+.color--red p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-start;
+}
+
+.color--red p i {
+    margin: 0 2px;
+}
+
+.color--green {
+  color: green;
+}
+
+.color--green p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    justify-content: flex-end;
+}
+
+.color--green p i {
+    margin: 0 2px;
+}
+
+.good-at-primary {
+    height: 15rem;
+    width: 100%;
+}
+
+.good-at-primary--angular {
+    background-image: url('../images/angularjs.png');
+    background-repeat: no-repeat;
+    background-position: -11px -9px;
+    width: 14rem;
+    background-size: 15rem;
+}
+
+.good-at-primary--html5 {
+    background-image: url(../images/html5.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 14rem;
+    background-size: 13rem;
+}
+
+.good-at-primary--css3 {
+    background-image: url(../images/css3.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    width: 14rem;
+    background-size: 12rem;
+}
+
+.good-at-primary--sass {
+    background-image: url(../images/sass.png);
+    background-repeat: no-repeat;
+    background-position: -3px 0px;
+    width: 14rem;
+    background-size: 12.5rem;
+}
+
+.good-at-other--ionic {
+    background-image: url(../images/Ionic.png);
+    background-size: 150px;
+    height: 161px;
+    background-repeat: no-repeat;
+    background-position: 50px 13px;
+}
+
+.good-at-other--bootstrap {
+    background-image: url(../images/bootstrap.png);
+    background-size: 143px;
+    height: 217px;
+    background-repeat: no-repeat;
+    background-position: 7px 2px;
+}
+
+.good-at-other--jquery {
+    background-image: url('../images/JQuery.png');
+    background-size: 146px;
+    height: 221px;
+    background-repeat: no-repeat;
+    background-position: 10px 24px;
+}
+
+.good-at-other--nodejs {
+    background-image: url(../images/nodejs.png);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 10px -13px;
+}
+
+.good-at-other--npm {
+    background-image: url('../images/Npm.png');
+    background-size: 135px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 40px 26px;
+}
+
+.good-at-other--cordova {
+    background-image: url(../images/Cordova.png);
+    background-size: 198px;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-position: -10px -9px;
+}
+
+.good-at-other--protractor {
+    background-image: url(../images/protractor.png);
+    background-size: 138px;
+    height: 225px;
+    background-repeat: no-repeat;
+    background-position: 13px 20px;
+}
+
+.good-at-other--karma {
+    background-image: url(../images/karma.png);
+    background-size: 175px;
+    height: 146px;
+    background-repeat: no-repeat;
+    background-position: 35px 19px;
+}
+
+.good-at-other--jasmine {
+    background-image: url(../images/jasmine.svg);
+    background-size: 210px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 7px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 160px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--grunt {
+    background-image: url(../images/grunt.png);
+    background-size: 156px;
+    height: 127px;
+    background-repeat: no-repeat;
+    background-position: 30px 12px;
+}
+
+.good-at-other--gulp {
+    background-image: url(../images/gulp.png);
+    background-size: 200px;
+    height: 78px;
+    background-repeat: no-repeat;
+    background-position: 9px 8px;
+}
+
+.good-at-other--compass {
+    background-image: url(../images/compass.png);
+    background-size: 185px;
+    height: 175px;
+    background-repeat: no-repeat;
+    background-position: 7px -4px;
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*overrides*/
+
+.glyphicon-menu-hamburger {
+  font-size: 4vh;
+}
+
+.stack-overflow {
+    border: solid 5px #fff;
+    border-radius: 12px;
+}
+
+
+/* media query */
+@media only screen
+and (max-device-width : 1023px)
+and (orientation: portrait) {
+  body {
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 42px
+  }
+
+  h2 {
+    font-size: 38px
+  }
+
+  h3 {
+    font-size: 34px
+  }
+
+  .about-me {
+    height: 92vh;
+  }
+
+  .my-img {
+    z-index: 1;
+    height: 500px;
+    width: 500px;
+  }
+
+  .overflow-hidden {
+      overflow: hidden;
+  }
+
+  .reach-me {
+    margin-top: 30px;
+    height: 200px;
+  }
+
+  .show-desktop-navigator {
+    display: none;
+  }
+
+  .footer {
+    height: 8vh;
+  }
+
+  .about-bg p {
+      font-size: 30px;
+  }
+
+  .about-bg h3 {
+      font-size: 60px;
+  }
+
+  .about-bg h1 {
+      font-size: 90px;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 1024px) {
+  .show-mobile-navigator {
+    display: none;
+  }
+}
+
+@media only screen
+and (max-device-width : 1023px)
+and (orientation: landscape) {
+  .show-desktop-navigator {
+    display: none;
+  }
+
+  .about-me {
+    height: 90vh;
+  }
+
+  .show-mobile-navigator {
+    height: 10vh;
+  }
+
+  #headerText {
+    padding-top: 0;
+  }
+
+  .glyphicon-menu-hamburger {
+    font-size: 6vh;
+  }
+
+  .footer {
+    height: 10vh;
+  }
+
+}
+
+@media only screen
+and (max-device-width : 1023px) {
+    .about-bg {
+        background-attachment: scroll;
+    }
+}
